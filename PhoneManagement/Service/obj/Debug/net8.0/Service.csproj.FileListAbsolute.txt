@@ -1,0 +1,17 @@
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Service.deps.json
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Service.dll
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Service.pdb
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Entity.dll
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Repository.dll
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Entity.pdb
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\bin\Debug\net8.0\Repository.pdb
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.dll
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\refint\Service.dll
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\Service.pdb
+D:\Code\PRN231\SystemDesign\PhoneManagement\Service\obj\Debug\net8.0\ref\Service.dll
