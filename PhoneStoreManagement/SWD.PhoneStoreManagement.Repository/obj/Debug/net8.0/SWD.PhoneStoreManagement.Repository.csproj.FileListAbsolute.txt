@@ -1,0 +1,14 @@
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\bin\Debug\net8.0\SWD.PhoneStoreManagement.Repository.deps.json
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\bin\Debug\net8.0\SWD.PhoneStoreManagement.Repository.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\bin\Debug\net8.0\SWD.PhoneStoreManagement.Repository.pdb
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.AssemblyInfoInputs.cache
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.AssemblyInfo.cs
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.csproj.CoreCompileInputs.cache
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\refint\SWD.PhoneStoreManagement.Repository.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.pdb
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\ref\SWD.PhoneStoreManagement.Repository.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\bin\Debug\net8.0\SWD.PhoneStoreManagement.Repository.runtimeconfig.json
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.csproj.AssemblyReference.cache
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Repository\obj\Debug\net8.0\SWD.PhoneStoreManagement.Repository.genruntimeconfig.cache

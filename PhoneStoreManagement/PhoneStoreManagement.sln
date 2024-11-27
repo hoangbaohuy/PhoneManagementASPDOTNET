@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWD.PhoneStoreManagement.Repository", "SWD.PhoneStoreManagement.Repository\SWD.PhoneStoreManagement.Repository.csproj", "{4A92FC2D-F113-4463-B083-34C20E7E40E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWD.PhoneStoreManagement.Service", "SWD.PhoneStoreManagement.Service\SWD.PhoneStoreManagement.Service.csproj", "{70DF63A2-1381-4DDC-BB75-E78222874672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWD.PhoneStoreManagement.Api", "SWD.PhoneStoreManagement.Api\SWD.PhoneStoreManagement.Api.csproj", "{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A92FC2D-F113-4463-B083-34C20E7E40E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A92FC2D-F113-4463-B083-34C20E7E40E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A92FC2D-F113-4463-B083-34C20E7E40E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A92FC2D-F113-4463-B083-34C20E7E40E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DF63A2-1381-4DDC-BB75-E78222874672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DF63A2-1381-4DDC-BB75-E78222874672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DF63A2-1381-4DDC-BB75-E78222874672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DF63A2-1381-4DDC-BB75-E78222874672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E05782A9-1C99-4ECD-AA9D-EF1C2D73B905}
+	EndGlobalSection
+EndGlobal

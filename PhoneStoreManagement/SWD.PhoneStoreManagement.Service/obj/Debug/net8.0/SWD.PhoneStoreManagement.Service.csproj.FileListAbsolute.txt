@@ -1,0 +1,15 @@
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\bin\Debug\net8.0\SWD.PhoneStoreManagement.Service.deps.json
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\bin\Debug\net8.0\SWD.PhoneStoreManagement.Service.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\bin\Debug\net8.0\SWD.PhoneStoreManagement.Service.pdb
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\bin\Debug\net8.0\SWD.PhoneStoreManagement.Repository.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\bin\Debug\net8.0\SWD.PhoneStoreManagement.Repository.pdb
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.csproj.AssemblyReference.cache
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.AssemblyInfoInputs.cache
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.AssemblyInfo.cs
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.csproj.CoreCompileInputs.cache
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.Phon.ADAAED24.Up2Date
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\refint\SWD.PhoneStoreManagement.Service.dll
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\SWD.PhoneStoreManagement.Service.pdb
+D:\Code\PRN231\SystemDesign\PhoneStoreManagement\SWD.PhoneStoreManagement.Service\obj\Debug\net8.0\ref\SWD.PhoneStoreManagement.Service.dll

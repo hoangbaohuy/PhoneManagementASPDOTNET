@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SWD.PhoneStoreManagement.Api.props" />
+</Project>
