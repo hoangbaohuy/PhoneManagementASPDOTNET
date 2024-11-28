@@ -21,11 +21,13 @@ namespace SWD.PhoneStoreManagement.Repository.Mapping
             #region Order
             CreateMap<CreateOrder, Order>();
             CreateMap<Order, GetOrder>().ReverseMap();
+            CreateMap<Order, GetOrderCf>().ReverseMap();
             #endregion
 
             #region Order detail
             CreateMap<CreateOrderDetail, OrderDetail>();
             CreateMap<GetOrderDetails, OrderDetail>().ReverseMap();
+            CreateMap<OrderDetail, OrderProfile>().ReverseMap();
             #endregion
 
             #region phone item

@@ -8,7 +8,10 @@ namespace SWD.PhoneStoreManagement.Repository.Response.OrderDetail
 {
     public class OrderProfile
     {
-        public int PhoneName { get; set; }
+        public int OrderDetailId { get; set; }
+        public int PhoneId { get; set; }
+        public string PhoneName { get; set; }
+        public string img { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
     }

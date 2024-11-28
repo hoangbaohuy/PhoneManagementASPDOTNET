@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SWD.PhoneStoreManagement.Repository.Entity;
 using SWD.PhoneStoreManagement.Repository.Interface;
 using SWD.PhoneStoreManagement.Repository.Response.Order;
+using SWD.PhoneStoreManagement.Repository.Response.OrderDetail;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,11 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
         public async Task<IEnumerable<GetOrder>> GetOrderByUserIdAsync(int userId)
         {
             return _mapper.Map<List<GetOrder>>(await _context.Orders.AsNoTracking().Include(o => o.OrderDetails).ThenInclude(od => od.PhoneItems).Where(o => o.UserId == userId).ToListAsync());
+        }
+   
+        public async Task<IEnumerable<GetOrderCf>> GetOrderByUserIdCfAsync(int userId)
+        {
+            return _mapper.Map<List<GetOrderCf>>(await _context.Orders.AsNoTracking().Include(o => o.OrderDetails).Where(o => o.UserId == userId).ToListAsync());
         }
 
         public async Task CreateOrdersAsync(Order order)

@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore.Storage;
 using SWD.PhoneStoreManagement.Repository.Entity;
+using SWD.PhoneStoreManagement.Repository.Implement;
 using SWD.PhoneStoreManagement.Repository.Interface;
 using SWD.PhoneStoreManagement.Repository.Request.Order;
 using SWD.PhoneStoreManagement.Repository.Response.Order;
@@ -16,14 +18,15 @@ namespace SWD.PhoneStoreManagement.Service.Implement
     public class OrderService : IOrderService
     {
         private readonly IOrderRepository _orderRepository;
+        private readonly IOrderDetailsRepository _orderDetailsRepository;
         private readonly IPhoneRepository _phoneRepository;
         private readonly IMapper _mapper;
 
-        public OrderService(IOrderRepository orderRepository, IPhoneRepository phoneRepository, IMapper mapper)
+        public OrderService(IOrderRepository orderRepository, IPhoneRepository phoneRepository,IOrderDetailsRepository orderDetailsRepository, IMapper mapper)
         {
             _orderRepository = orderRepository;
             _phoneRepository = phoneRepository;
-
+            _orderDetailsRepository = orderDetailsRepository;
             _mapper = mapper;
         }
 
@@ -87,7 +90,19 @@ namespace SWD.PhoneStoreManagement.Service.Implement
         //    }
         //    await _orderRepository.CreateOrdersAsync(order);
         //}
-
+        public async Task<IEnumerable<GetOrderCf>> GetOrderByUserIdCfAsync(int useId)
+        {
+            var ListOrder = await _orderRepository.GetOrderByUserIdCfAsync(useId);
+            foreach (var item in ListOrder) 
+            {
+                foreach (var itemCf in item.OrderDetails)
+                {
+                    var phone = await _phoneRepository.GetPhoneByIdAsync(itemCf.PhoneId);
+                    itemCf.img = phone.Image;
+                }
+            }
+            return ListOrder;
+        }
         public async Task CreateOrderAsync(CreateOrder createOrder)
         {
    
@@ -103,22 +118,34 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                 {
           
                     var existingDetail = existingOrder.OrderDetails.FirstOrDefault(detail => detail.PhoneId == newItem.PhoneId);
-
+                    var phone = await _phoneRepository.GetPhoneByIdAsync(newItem.PhoneId);
                     if (existingDetail != null)
                     {
                         // Nếu tồn tại, cập nhật số lượng
+                        if (newItem.Quantity > phone.StockQuantity)
+                        {
+                            throw new Exception($"Phone with ID {newItem.PhoneId} is out of stock.");
+                        }
                         existingDetail.Quantity = newItem.Quantity;
-                        existingDetail.UnitPrice = existingDetail.Quantity * existingDetail.UnitPrice;
+                        existingDetail.UnitPrice = existingDetail.Quantity * phone.Price;
+                        if (existingDetail.Quantity == 0)
+                        {
+                            var ordetails = _mapper.Map<OrderDetail>(existingDetail);
+                            await _orderDetailsRepository.DeleteOrderDetails(ordetails);
+                        }
                     }
                     else
                     {
-                        // Nếu không, thêm chi tiết mới
-                        var phone = await _phoneRepository.GetPhoneByIdAsync(newItem.PhoneId);
+
+                        
                         if (phone == null)
                         {
                             throw new Exception($"Phone with ID {newItem.PhoneId} not found.");
                         }
-
+                        if (newItem.Quantity > phone.StockQuantity)
+                        {
+                            throw new Exception($"Phone with ID {newItem.PhoneId} is out of stock.");
+                        }
                         existingOrder.OrderDetails.Add(new GetOrderDetails
                         {
                             PhoneId = newItem.PhoneId,
@@ -166,6 +193,11 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
                 await _orderRepository.CreateOrdersAsync(newOrder);
             }
+        }
+
+        public async Task DoneOrderAsync(CreateOrder createOrder)
+        {
+            
         }
     }
 }
