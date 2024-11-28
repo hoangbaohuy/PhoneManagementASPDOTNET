@@ -106,7 +106,7 @@ builder.Services.AddScoped<IAuthenService, AuthenService>();
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-
+builder.Services.AddScoped<IOrderDetailsRepository, OrderDetailsRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
