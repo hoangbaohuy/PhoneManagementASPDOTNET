@@ -1,89 +1,93 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\",
+  "WorkspaceRootPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.api\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.api\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\verifyaccountrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\verifyaccountrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.service\\implement\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\implement\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.service\\interface\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\interface\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.service\\interface\\iphoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\interface\\iphoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.service\\implement\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\implement\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\phonestoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.api\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\controllers\\phonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.api\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\verifyaccountrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\verifyaccountrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.service\\implement\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\implement\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.service\\interface\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\interface\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.service\\interface\\iphoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\interface\\iphoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.service\\implement\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\implement\\phoneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\phonestoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\phonestoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\forgetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\authenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\authenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\implement\\authenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\iauthenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\iauthenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\interface\\iauthenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\phonerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\phonerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\implement\\phonerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\implement\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\code\\prn231\\systemdesign\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\iphonerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\iphonerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\interface\\iphonerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -93,12 +97,20 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 289,
-          "SelectedChildIndex": 22,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 30,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -146,10 +158,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
@@ -173,277 +181,276 @@
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VerifyAccountRequest.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:18:44.687Z",
+              "WhenOpened": "2024-11-28T16:33:26.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AuthenService.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\AuthenService.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\AuthenService.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Implement\\AuthenService.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\AuthenService.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\AuthenService.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Implement\\AuthenService.cs",
               "ViewState": "AQIAAKQAAAAAAAAAAAAAALQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:54:59.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:54:59.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IAuthenService.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IAuthenService.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IAuthenService.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Interface\\IAuthenService.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IAuthenService.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IAuthenService.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Interface\\IAuthenService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:55:06.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:55:06.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthenController.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\AuthenController.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\AuthenController.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\Controllers\\AuthenController.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\AuthenController.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\AuthenController.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\Controllers\\AuthenController.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAHYAAAAAAAAA",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAuwHYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T16:56:38.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ResetPasswordRequest.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ResetPasswordRequest.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ResetPasswordRequest.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\ResetPasswordRequest.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ResetPasswordRequest.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ResetPasswordRequest.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\ResetPasswordRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:54:27.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:54:27.171Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PhoneController.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\PhoneController.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\PhoneController.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\Controllers\\PhoneController.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\PhoneController.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\PhoneController.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\Controllers\\PhoneController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAAB0AAAAZAAAA",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwB0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T16:57:00.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IPhoneService.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IPhoneService.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IPhoneService.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Interface\\IPhoneService.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IPhoneService.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IPhoneService.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Interface\\IPhoneService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:55:44.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PhoneService.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAB4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:55:35.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABMAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:08:17.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:55:44.732Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Title": "PhoneService.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Implement\\PhoneService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAB4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:53:33.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:55:35.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Entity\\User.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T17:08:17.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Program.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Program.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\Program.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Program.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Program.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAUwGwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T17:09:06.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\appsettings.json",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\appsettings.json",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-27T17:11:00.263Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "VerifyAccountRequest.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\VerifyAccountRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T18:18:44.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\RegisterRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:53:33.242Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "PhoneStoreDbContext.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:11:36.412Z",
-              "EditorCaption": ""
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\appsettings.json",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\appsettings.json",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-27T17:11:00.263Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ForgetPasswordRequest.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Title": "PhoneStoreDbContext.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\PhoneStoreDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:52:50.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T17:11:36.412Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Title": "ForgetPasswordRequest.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\ForgetPasswordRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:53:14.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:52:50.043Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "AuthenRepository.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Request\\LoginRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:50:48.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:53:14.464Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "IAuthenRepository.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Title": "AuthenRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\AuthenRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:50:30.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:50:48.949Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "PhoneRepository.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "IAuthenRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Interface\\IAuthenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:51:37.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:50:30.676Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Title": "PhoneRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\PhoneRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:52:08.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:51:37.218Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
-              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:51:56.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:52:08.515Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:51:56.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "IPhoneRepository.cs",
-              "DocumentMoniker": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IPhoneRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IPhoneRepository.cs",
               "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Interface\\IPhoneRepository.cs",
-              "ToolTip": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IPhoneRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IPhoneRepository.cs",
               "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Interface\\IPhoneRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T16:51:16.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:51:16.868Z"
             }
           ]
         }

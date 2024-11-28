@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using SWD.PhoneStoreManagement.Repository;
 using SWD.PhoneStoreManagement.Repository.Implement;
 using SWD.PhoneStoreManagement.Repository.Interface;
+using SWD.PhoneStoreManagement.Repository.Mapping;
 using SWD.PhoneStoreManagement.Service.Implement;
 using SWD.PhoneStoreManagement.Service.Interface;
 using System.Text;
@@ -46,7 +47,9 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
-
+////
+builder.Services.AddAutoMapper(typeof(MappingProfiles));
+//
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -99,7 +102,11 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddScoped<IPhoneService, PhoneService>();
 builder.Services.AddScoped<IAuthenService, AuthenService>();
+///
 
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderDetailsRepository, OrderDetailsRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

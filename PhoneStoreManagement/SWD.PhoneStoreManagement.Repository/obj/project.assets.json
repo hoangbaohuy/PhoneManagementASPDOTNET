@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1619,6 +1635,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -4301,6 +4332,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AutoMapper >= 13.0.1",
       "Microsoft.EntityFrameworkCore >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.11",
@@ -4310,19 +4342,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huy\\.nuget\\packages\\": {}
+    "C:\\Users\\msi209vn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
+      "projectUniqueName": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
       "projectName": "SWD.PhoneStoreManagement.Repository",
-      "projectPath": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
-      "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\PRN231\\SystemDesign\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\obj\\",
+      "projectPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
+      "packagesPath": "C:\\Users\\msi209vn\\.nuget\\packages\\",
+      "outputPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\msi209vn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4353,6 +4385,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.11, )"
@@ -4398,7 +4434,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
