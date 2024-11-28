@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SWD.PhoneStoreManagement.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a24e4bc29ca35298073bf6c1b9f7240e3a4b6348")]
 [assembly: System.Reflection.AssemblyProductAttribute("SWD.PhoneStoreManagement.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SWD.PhoneStoreManagement.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
