@@ -98,7 +98,12 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                 foreach (var itemCf in item.OrderDetails)
                 {
                     var phone = await _phoneRepository.GetPhoneByIdAsync(itemCf.PhoneId);
+                    if(phone == null)
+                    {
+                        throw new Exception($"Phone with ID {itemCf.PhoneId} don't exit.");
+                    }
                     itemCf.img = phone.Image;
+                    itemCf.PhoneName = phone.Description;
                 }
             }
             return ListOrder;
@@ -163,7 +168,6 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             }
             else
             {
-                // Nếu chưa có đơn hàng "InProcess", tạo mới đơn hàng
                 var newOrder = _mapper.Map<Order>(createOrder);
                 newOrder.OrderDate = DateTime.Now;
                 newOrder.Status = "InProcess";
@@ -195,9 +199,20 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             }
         }
 
-        public async Task DoneOrderAsync(CreateOrder createOrder)
-        {
+        //public async Task DoneOrderAsync(int orderId)
+        //{
+        //    // sau khi done order nay thi
+        //    // so quantity cua dienthoai giam 
+        //    // status cua Phoneitem = sold
+        //    var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
+
+        //    if (userOrders.Status == "InProcess")
+        //    {
+
+        //    }
+
             
-        }
+
+        //}
     }
 }

@@ -50,6 +50,17 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             return Ok(phone);
         }
 
+        [HttpGet("get-order-by-id-user-cf/{id}")]
+        public async Task<ActionResult<IEnumerable<Order>>> GetOrderByUserCf(int id)
+        {
+            var phone = await _orderService.GetOrderByUserIdCfAsync(id);
+            if (phone == null)
+            {
+                return NotFound();
+            }
+            return Ok(phone);
+        }
+
         [HttpPost]
         public async Task<ActionResult<Order>> CreateOrder(CreateOrder order)
         {
