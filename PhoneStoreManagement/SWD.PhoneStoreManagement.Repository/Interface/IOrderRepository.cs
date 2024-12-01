@@ -17,6 +17,6 @@ namespace SWD.PhoneStoreManagement.Repository.Interface
         Task<IEnumerable<GetOrder>> GetAllOrdersAsync();
         Task CreateOrdersAsync(Order corder);
         Task UpdateOrdersAsync(Order corder);
-        Task DeleteOrder(Order corder);
+        Task DeleteOrder(Order order);
     }
 }

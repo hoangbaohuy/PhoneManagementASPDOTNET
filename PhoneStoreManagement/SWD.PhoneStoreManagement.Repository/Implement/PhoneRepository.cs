@@ -22,9 +22,21 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
             return await _context.Set<Phone>().FindAsync(phoneId);
         }
 
+
+        /// <summary>
+        /// lấy chi tiết phone và phone item 
+        /// </summary>
+
+        public async Task<Phone> GetPhoneAndItemByIdAsync(int phoneId)
+        {
+            return await _context.Phones.AsNoTracking().Include(i => i.PhoneItems).FirstOrDefaultAsync(o => o.PhoneId == phoneId); ;
+        }
+
         public async Task<IEnumerable<Phone>> GetAllPhonesAsync()
         {
             return await _context.Set<Phone>().ToListAsync();
         }
+
+
     }
 }

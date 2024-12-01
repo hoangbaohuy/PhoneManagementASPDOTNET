@@ -37,5 +37,17 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             }
             return Ok(phone);
         }
+
+        // GET: api/phones/{id}
+        [HttpGet("details/{id}")]
+        public async Task<ActionResult<Phone>> GetPhonedetails(int id)
+        {
+            var phone = await _phoneService.GetPhoneandPhoneQItemByIdAsync(id);
+            if (phone == null)
+            {
+                return NotFound();
+            }
+            return Ok(phone);
+        }
     }
 }

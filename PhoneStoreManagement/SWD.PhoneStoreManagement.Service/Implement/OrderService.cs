@@ -6,6 +6,8 @@ using SWD.PhoneStoreManagement.Repository.Interface;
 using SWD.PhoneStoreManagement.Repository.Request.Order;
 using SWD.PhoneStoreManagement.Repository.Response.Order;
 using SWD.PhoneStoreManagement.Repository.Response.OrderDetail;
+using SWD.PhoneStoreManagement.Repository.Response.Phone;
+using SWD.PhoneStoreManagement.Repository.Response.PhoneItem;
 using SWD.PhoneStoreManagement.Service.Interface;
 using System;
 using System.Collections.Generic;
@@ -114,7 +116,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             var userOrders = await _orderRepository.GetOrderByUserIdAsync(createOrder.UserId);
 
       
-            var existingOrder = userOrders.FirstOrDefault(order => order.Status == "InProcess");
+            var existingOrder = userOrders.FirstOrDefault(order => order.Status == "Pending");
 
             if (existingOrder != null)
             {
@@ -126,13 +128,13 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                     var phone = await _phoneRepository.GetPhoneByIdAsync(newItem.PhoneId);
                     if (existingDetail != null)
                     {
-                        // Nếu tồn tại, cập nhật số lượng
                         if (newItem.Quantity > phone.StockQuantity)
                         {
                             throw new Exception($"Phone with ID {newItem.PhoneId} is out of stock.");
                         }
                         existingDetail.Quantity = newItem.Quantity;
                         existingDetail.UnitPrice = existingDetail.Quantity * phone.Price;
+
                         if (existingDetail.Quantity == 0)
                         {
                             var ordetails = _mapper.Map<OrderDetail>(existingDetail);
@@ -141,7 +143,6 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                     }
                     else
                     {
-
                         
                         if (phone == null)
                         {
@@ -170,12 +171,12 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             {
                 var newOrder = _mapper.Map<Order>(createOrder);
                 newOrder.OrderDate = DateTime.Now;
-                newOrder.Status = "InProcess";
+                newOrder.Status = "Pending";
                 newOrder.TotalAmount = 0;
 
                 foreach (var item in newOrder.OrderDetails)
                 {
-                    var phone = await _phoneRepository.GetPhoneByIdAsync(item.PhoneId);
+                    var phone = await _phoneRepository.GetPhoneAndItemByIdAsync(item.PhoneId);
                     if (phone == null)
                     {
                         throw new Exception($"Phone with ID {item.PhoneId} not found.");
@@ -188,6 +189,19 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
                     item.UnitPrice = phone.Price;
                     newOrder.TotalAmount += item.UnitPrice * item.Quantity;
+                    
+                    //foreach (var itemphone in phone.PhoneItems)
+                    //{
+                    //    if (itemphone.Status == "Pending")
+                    //    {
+                    //        for (int i = 0;i < item.Quantity; i++)
+                    //        {
+                    //            item.PhoneItems.Add(itemphone);
+                                 
+                    //        }
+                    //    }
+
+                    //}
                 }
 
                 if (newOrder.OrderDetails == null || newOrder.OrderDetails.Count == 0)
@@ -199,20 +213,82 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             }
         }
 
-        //public async Task DoneOrderAsync(int orderId)
-        //{
-        //    // sau khi done order nay thi
-        //    // so quantity cua dienthoai giam 
-        //    // status cua Phoneitem = sold
-        //    var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
+        public async Task DoneOrderAsync(int orderId)
+        {
+            // sau khi done order nay thi
+            // so quantity cua dienthoai giam 
+            // status cua Phoneitem = sold
+            var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
 
-        //    if (userOrders.Status == "InProcess")
-        //    {
+            if (userOrders.Status == "Pending")
+            {
+                if(userOrders.OrderDetails == null || userOrders.OrderDetails.Count == 0)
+                {
+                    throw new Exception($"Your shopping cart is empty."); 
+                }
+                foreach (var item in userOrders.OrderDetails)
+                {
 
-        //    }
+                    var phone = _mapper.Map<Getphone>(await _phoneRepository.GetPhoneAndItemByIdAsync(item.PhoneId));
+                 
+                    if (phone == null )
+                    {
+                        throw new Exception($"Phone with ID {item.PhoneId} not found.");
+                    }
 
-            
+                    if (item.Quantity > phone.StockQuantity)
+                    {
+                        throw new Exception($"Phone with ID {item.PhoneId} is out of stock.");
+                    }
 
-        //}
+                    foreach (var itemphone in phone.PhoneItems)
+                    {
+                        if (itemphone.Status == "Pending")
+                        {
+                            for (int i = 0; i < item.Quantity; i++)
+                            {
+                                var mappedPhoneItem = _mapper.Map<GetPhoneItem>(itemphone);
+                                mappedPhoneItem.PhoneId = phone.PhoneId;
+                                mappedPhoneItem.Status = "sold";
+                                mappedPhoneItem.DatePurchased = DateTime.Now;
+                                mappedPhoneItem.ExpiryDate = DateTime.Now.AddDays(phone.WarrantyPeriod ?? 0);
+                                item.PhoneItems.Add(mappedPhoneItem);
+                            }
+                        }
+
+                    }
+                    phone.StockQuantity -= item.Quantity;
+                    userOrders.Status = "Completed";
+                    
+                }
+                var mappedOrder = _mapper.Map<Order>(userOrders);
+                await _orderRepository.UpdateOrdersAsync(mappedOrder);
+            }
+
+        }
+
+        //clear order details : one click
+        //delete order  : two click
+        public async Task DeleteOrder(int orderId)
+        {
+
+            var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
+
+            if (userOrders == null)
+                throw new Exception($"Order with ID {orderId} not found.");
+
+
+            foreach (var item in userOrders.OrderDetails.ToList()) 
+            {
+                var mappedOrderDetails = _mapper.Map<OrderDetail>(item);
+                await _orderDetailsRepository.DeleteOrderDetails(mappedOrderDetails);
+            }
+            if(userOrders.OrderDetails.Count == 0)
+            {
+                var mappedOrder = _mapper.Map<Order>(userOrders);
+                await _orderRepository.DeleteOrder(mappedOrder);
+            }
+
+        }
     }
 }

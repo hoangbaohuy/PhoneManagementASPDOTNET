@@ -1,4 +1,6 @@
 ﻿using SWD.PhoneStoreManagement.Repository.Entity;
+using SWD.PhoneStoreManagement.Repository.Response.Phone;
+using SWD.PhoneStoreManagement.Repository.Response.PhoneItem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,7 @@ namespace SWD.PhoneStoreManagement.Service.Interface
     public interface IPhoneService
     {
         Task<Phone> GetPhoneByIdAsync(int phoneId);
+        Task<Getphone> GetPhoneandPhoneQItemByIdAsync(int phoneId);
         Task<IEnumerable<Phone>> GetAllPhonesAsync();
     }
 }

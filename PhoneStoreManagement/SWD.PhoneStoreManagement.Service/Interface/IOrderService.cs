@@ -17,7 +17,10 @@ namespace SWD.PhoneStoreManagement.Service.Interface
         Task<IEnumerable<GetOrderCf>> GetOrderByUserIdCfAsync(int useId);
         Task<IEnumerable<GetOrder>> GetAllOrdersAsync();
         Task CreateOrderAsync(CreateOrder createOrder);
+        Task DoneOrderAsync(int orderId);
+        Task DeleteOrder(int orderId);
 
-        
+
+
     }
 }

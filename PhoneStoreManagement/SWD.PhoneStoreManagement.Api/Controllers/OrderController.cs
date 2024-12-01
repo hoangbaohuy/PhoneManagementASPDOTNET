@@ -68,5 +68,20 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
 
             return Ok();
         }
+
+        [HttpPut("done/{orderId}")]
+        public async Task<ActionResult<Order>> DoneOrder(int orderId)
+        {
+            await _orderService.DoneOrderAsync(orderId);
+
+            return Ok();
+        }
+        [HttpDelete("{orderId}")]
+        public async Task<ActionResult<Order>> DeleteOrder(int orderId)
+        {
+            await _orderService.DeleteOrder(orderId);
+
+            return Ok();
+        }
     }
 }
