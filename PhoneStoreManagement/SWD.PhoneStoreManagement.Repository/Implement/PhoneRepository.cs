@@ -71,5 +71,11 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
                 })
                 .ToListAsync();
         }
+
+        public async Task UpdatePhoneAsync(Phone phone)
+        {
+            _context.Phones.Update(phone);
+            await _context.SaveChangesAsync();
+        }
     }
 }

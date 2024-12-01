@@ -1,4 +1,5 @@
 ﻿using SWD.PhoneStoreManagement.Repository.Entity;
+using SWD.PhoneStoreManagement.Repository.Request.Phone;
 using SWD.PhoneStoreManagement.Repository.Response.Phone;
 using SWD.PhoneStoreManagement.Repository.Response.PhoneItem;
 using System;
@@ -15,5 +16,6 @@ namespace SWD.PhoneStoreManagement.Service.Interface
         Task<Getphone> GetPhoneandPhoneQItemByIdAsync(int phoneId);
         Task<IEnumerable<Phone>> GetAllPhonesAsync();
         Task<IEnumerable<PhoneDetail>> GetAllPhoneDetailsAsync();
+        Task UpdatePhoneAsync(int phoneId, UpdatePhone updatedPhoneData);
     }
 }

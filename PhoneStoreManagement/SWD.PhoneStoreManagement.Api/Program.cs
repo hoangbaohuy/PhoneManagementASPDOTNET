@@ -99,10 +99,12 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddScoped<IPhoneRepository, PhoneRepository>();
 builder.Services.AddScoped<IAuthenRepository, AuthenRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IPhoneItemRepository, PhoneItemRepository>();
 
 builder.Services.AddScoped<IPhoneService, PhoneService>();
 builder.Services.AddScoped<IAuthenService, AuthenService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IPhoneItemService, PhoneItemService>();
 ///
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
