@@ -12,5 +12,7 @@ namespace SWD.PhoneStoreManagement.Repository.Interface
         Task<Phone> GetPhoneByIdAsync(int phoneId);
         Task<Phone> GetPhoneAndItemByIdAsync(int phoneId);
         Task<IEnumerable<Phone>> GetAllPhonesAsync();
+
+  
     }
 }

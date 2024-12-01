@@ -281,6 +281,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
                     }
                     phone.StockQuantity -= item.Quantity;
+              
                     userOrders.Status = "Completed";
                     
                 }
@@ -313,5 +314,59 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             }
 
         }
+
+        public async Task warrantyOrderByCustomer(int orderId, string code)
+        {
+            // check theo mã điện thoại  -> từ đơn hàng , người dùng 
+            var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
+            var now = DateTime.Now;
+            foreach (var item in userOrders.OrderDetails)
+            {
+                foreach(var phoneItem in item.PhoneItems)
+                {
+                    if (phoneItem.SerialNumber == code)
+                    {
+           
+                        if (phoneItem.Status == "sold" && phoneItem.DatePurchased <= now && now <= phoneItem.ExpiryDate)
+                        {
+                            phoneItem.Status = "warranty";
+                        } else
+                        {
+                            throw new Exception($"this phone was Expired Warranty ");
+                        }
+                    }else
+                    {
+                        throw new Exception($"Wrong code ");
+                    }
+                }
+            }
+            var mappedOrder = _mapper.Map<Order>(userOrders);
+            await _orderRepository.UpdateOrdersAsync(mappedOrder);
+
+        }
+        // status = Warranty, Under Warranty ,Warranty Expired,Warranty Claimed
+        public async Task warrantyOrderByShopOwner(int orderId, string code,string status)
+        {
+             
+            var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
+            var now = DateTime.Now;
+
+            foreach (var item in userOrders.OrderDetails)
+            {
+                foreach (var phoneItem in item.PhoneItems)
+                {
+                    if (phoneItem.SerialNumber == code && phoneItem.DatePurchased <= now && now <= phoneItem.ExpiryDate)
+                    {
+                        phoneItem.Status = status;
+                    }
+                }
+            }
+            var mappedOrder = _mapper.Map<Order>(userOrders);
+            await _orderRepository.UpdateOrdersAsync(mappedOrder);
+
+        }
+
+
+
     }
 }
