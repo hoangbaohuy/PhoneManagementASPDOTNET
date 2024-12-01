@@ -28,7 +28,7 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
 
         public async Task<GetOrder> GetOrderByIdAsync(int orderId)
         {
-            return _mapper.Map<GetOrder>(await _context.Orders.Include(o => o.OrderDetails).ThenInclude(od => od.PhoneItems).FirstOrDefaultAsync(o => o.OrderId == orderId));
+            return _mapper.Map<GetOrder>(await _context.Orders.AsNoTracking().Include(o => o.OrderDetails).ThenInclude(od => od.PhoneItems).FirstOrDefaultAsync(o => o.OrderId == orderId));
         }
        
         public async Task<IEnumerable<GetOrder>> GetOrderByUserIdAsync(int userId)

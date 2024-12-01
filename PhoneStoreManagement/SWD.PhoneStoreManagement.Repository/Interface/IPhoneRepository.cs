@@ -10,6 +10,7 @@ namespace SWD.PhoneStoreManagement.Repository.Interface
     public interface IPhoneRepository
     {
         Task<Phone> GetPhoneByIdAsync(int phoneId);
+        Task<Phone> GetPhoneAndItemByIdAsync(int phoneId);
         Task<IEnumerable<Phone>> GetAllPhonesAsync();
     }
 }
