@@ -40,12 +40,35 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
         public async Task<GetOrder> GetOrderByIdAsync(int orderId)
         {
-            return await _orderRepository.GetOrderByIdAsync(orderId);
+            var Order = await _orderRepository.GetOrderByIdAsync(orderId);
+            foreach (var itemCf in Order.OrderDetails)
+            {
+                var phone = await _phoneRepository.GetPhoneByIdAsync(itemCf.PhoneId);
+                if (phone == null)
+                {
+                    throw new Exception($"Phone with ID {itemCf.PhoneId} don't exit.");
+                }
+                itemCf.Image = phone.Image;
+            }
+            return Order;
         }
 
         public async Task<IEnumerable<GetOrder>> GetOrderByUserIdAsync(int useId)
         {
-            return await _orderRepository.GetOrderByUserIdAsync(useId);
+            var ListOrder = await _orderRepository.GetOrderByUserIdAsync(useId);
+            foreach (var item in ListOrder)
+            {
+                foreach (var itemCf in item.OrderDetails)
+                {
+                    var phone = await _phoneRepository.GetPhoneByIdAsync(itemCf.PhoneId);
+                    if (phone == null)
+                    {
+                        throw new Exception($"Phone with ID {itemCf.PhoneId} don't exit.");
+                    }
+                    itemCf.Image = phone.Image;
+                }
+            }
+            return ListOrder;
         }
         // fix lại 
         //public async Task CreateOrderAsync(CreateOrder createOrder)

@@ -23,10 +23,8 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
         }
 
 
-        /// <summary>
-        /// lấy chi tiết phone và phone item 
-        /// </summary>
 
+        /// lấy chi tiết phone và phone item 
         public async Task<Phone> GetPhoneAndItemByIdAsync(int phoneId)
         {
             return await _context.Phones.AsNoTracking().Include(i => i.PhoneItems).FirstOrDefaultAsync(o => o.PhoneId == phoneId); ;
@@ -36,6 +34,7 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
         {
             return await _context.Set<Phone>().ToListAsync();
         }
+
 
 
     }
