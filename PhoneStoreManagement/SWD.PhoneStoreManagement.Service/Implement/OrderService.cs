@@ -349,13 +349,12 @@ namespace SWD.PhoneStoreManagement.Service.Implement
         {
              
             var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
-            var now = DateTime.Now;
 
             foreach (var item in userOrders.OrderDetails)
             {
                 foreach (var phoneItem in item.PhoneItems)
                 {
-                    if (phoneItem.SerialNumber == code && phoneItem.DatePurchased <= now && now <= phoneItem.ExpiryDate)
+                    if (phoneItem.SerialNumber == code )
                     {
                         phoneItem.Status = status;
                     }
