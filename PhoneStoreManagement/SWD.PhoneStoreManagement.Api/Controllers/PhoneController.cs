@@ -49,5 +49,12 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             }
             return Ok(phone);
         }
+
+        [HttpGet("details")]
+        public async Task<IActionResult> GetAllPhones()
+        {
+            var phones = await _phoneService.GetAllPhoneDetailsAsync();
+            return Ok(phones);
+        }
     }
 }

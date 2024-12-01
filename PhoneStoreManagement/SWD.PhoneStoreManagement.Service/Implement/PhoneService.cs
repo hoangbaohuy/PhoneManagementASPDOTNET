@@ -37,5 +37,10 @@ namespace SWD.PhoneStoreManagement.Service.Implement
         {
             return _mapper.Map<Getphone>(await _phoneRepository.GetPhoneAndItemByIdAsync(phoneId));
         }
+
+        public async Task<IEnumerable<PhoneDetail>> GetAllPhoneDetailsAsync()
+        {
+            return await _phoneRepository.GetAllPhonesWithDetailsAsync();
+        }
     }
 }

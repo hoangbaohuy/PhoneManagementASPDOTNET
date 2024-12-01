@@ -1,4 +1,5 @@
 ﻿using SWD.PhoneStoreManagement.Repository.Entity;
+using SWD.PhoneStoreManagement.Repository.Response.Phone;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,6 @@ namespace SWD.PhoneStoreManagement.Repository.Interface
         Task<Phone> GetPhoneAndItemByIdAsync(int phoneId);
         Task<IEnumerable<Phone>> GetAllPhonesAsync();
 
-  
+        Task<IEnumerable<PhoneDetail>> GetAllPhonesWithDetailsAsync();
     }
 }
