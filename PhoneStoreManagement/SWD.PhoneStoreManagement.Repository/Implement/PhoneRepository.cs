@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SWD.PhoneStoreManagement.Repository.Entity;
 using SWD.PhoneStoreManagement.Repository.Interface;
+using SWD.PhoneStoreManagement.Repository.Response.Phone;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,40 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
 
         public async Task UpdatePhonesAsync(Phone phone)
 
+        {
+            _context.Phones.Update(phone);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<PhoneDetail>> GetAllPhonesWithDetailsAsync()
+        {
+            return await _context.Phones
+                .Include(p => p.Model)
+                .ThenInclude(m => m.Brand)
+                .Select(p => new PhoneDetail
+                {
+                    PhoneId = p.PhoneId,
+                    Description = p.Description,
+                    Price = p.Price,
+                    StockQuantity = p.StockQuantity,
+                    Image = p.Image,
+                    Chipset = p.Chipset,
+                    Gpu = p.Gpu,
+                    Color = p.Color,
+                    WarrantyPeriod = p.WarrantyPeriod,
+                    ModelId = p.ModelId,
+                    ModelName = p.Model.ModelName,
+                    ReleaseDate = p.Model.ReleaseDate,
+                    OperatingSystem = p.Model.OperatingSystem,
+                    Ram = p.Model.Ram,
+                    Storage = p.Model.Storage,
+                    BrandId = p.Model.BrandId,
+                    BrandName = p.Model.Brand.BrandName
+                })
+                .ToListAsync();
+        }
+
+        public async Task UpdatePhoneAsync(Phone phone)
         {
             _context.Phones.Update(phone);
             await _context.SaveChangesAsync();

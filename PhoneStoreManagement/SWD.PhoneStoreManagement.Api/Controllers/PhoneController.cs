@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using SWD.PhoneStoreManagement.Repository.Entity;
+using SWD.PhoneStoreManagement.Repository.Request.Phone;
 using SWD.PhoneStoreManagement.Service.Interface;
 
 namespace SWD.PhoneStoreManagement.Api.Controllers
@@ -48,6 +49,31 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
                 return NotFound();
             }
             return Ok(phone);
+        }
+
+        [HttpGet("details")]
+        public async Task<IActionResult> GetAllPhones()
+        {
+            var phones = await _phoneService.GetAllPhoneDetailsAsync();
+            return Ok(phones);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdatePhone(int id, [FromBody] UpdatePhone updatedPhoneData)
+        {
+            try
+            {
+                await _phoneService.UpdatePhoneAsync(id, updatedPhoneData);
+                return Ok(new { Message = "Phone updated successfully." });
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An error occurred.", Details = ex.Message });
+            }
         }
     }
 }
