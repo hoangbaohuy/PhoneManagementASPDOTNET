@@ -110,6 +110,10 @@ builder.Services.AddScoped<IPhoneItemService, PhoneItemService>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderDetailsRepository, OrderDetailsRepository>();
+
+/// vnp
+builder.Services.AddScoped<IVnPayService, VnPayService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj": {}
+    "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj": {
+    "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
+        "projectUniqueName": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
         "projectName": "SWD.PhoneStoreManagement.Repository",
-        "projectPath": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
-        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\obj\\",
+        "projectPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj",
+        "packagesPath": "C:\\Users\\msi209vn\\.nuget\\packages\\",
+        "outputPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\msi209vn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +48,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -94,21 +98,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj": {
+    "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj",
+        "projectUniqueName": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj",
         "projectName": "SWD.PhoneStoreManagement.Service",
-        "projectPath": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj",
-        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\obj\\",
+        "projectPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj",
+        "packagesPath": "C:\\Users\\msi209vn\\.nuget\\packages\\",
+        "outputPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\msi209vn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,8 +126,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj": {
-                "projectPath": "C:\\Users\\huy\\Downloads\\swd\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj"
+              "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj": {
+                "projectPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj"
               }
             }
           }
@@ -164,7 +168,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
