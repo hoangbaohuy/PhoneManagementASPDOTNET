@@ -70,51 +70,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             }
             return ListOrder;
         }
-        // fix lại 
-        //public async Task CreateOrderAsync(CreateOrder createOrder)
-        //{
-        //    var listOrder = await _orderRepository.GetOrderByUserIdAsync(createOrder.UserId);
-        //    foreach (var exititem in listOrder)
-        //    {
-        //        if (exititem.Status == "InProcess")
-        //        {
 
-        //        }
-        //    }
-
-
-        //    var order = _mapper.Map<Order>(createOrder);
-        //    List<int> lackphone = new List<int>();
-        //    order.OrderDate = DateTime.Now;
-        //    order.Status = "InProcess";
-
-        //    foreach (var item in order.OrderDetails)
-        //    {
-        //        var phone = await _phoneRepository.GetPhoneByIdAsync(item.PhoneId);
-        //        if (phone == null)
-        //        {
-        //            throw new Exception($"Phone with ID {item.PhoneId} not found.");
-        //        }
-
-        //        if (item.Quantity > phone.StockQuantity)
-        //        {
-        //            lackphone.Add(item.PhoneId);
-        //        }
-
-        //        item.UnitPrice = phone.Price * item.Quantity;
-        //        order.TotalAmount += item.UnitPrice;
-        //    }
-        //    if (order.OrderDetails == null || order.OrderDetails.Count == 0)
-        //    {
-        //        throw new Exception($"You haven't added your phone yet.");
-        //    }
-
-        //    if (lackphone.Count > 0)
-        //    {
-        //        throw new Exception($"Phones with IDs {string.Join(", ", lackphone)} are out of stock.");
-        //    }
-        //    await _orderRepository.CreateOrdersAsync(order);
-        //}
         public async Task<IEnumerable<GetOrderCf>> GetOrderByUserIdCfAsync(int useId)
         {
             var ListOrder = await _orderRepository.GetOrderByUserIdCfAsync(useId);
@@ -272,16 +228,19 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                             {
                                 var mappedPhoneItem = _mapper.Map<GetPhoneItem>(itemphone);
                                 mappedPhoneItem.PhoneId = phone.PhoneId;
+                                mappedPhoneItem.OrderDetailId = item.OrderDetailId;
                                 mappedPhoneItem.Status = "sold";
                                 mappedPhoneItem.DatePurchased = DateTime.Now;
                                 mappedPhoneItem.ExpiryDate = DateTime.Now.AddDays(phone.WarrantyPeriod ?? 0);
-                                item.PhoneItems.Add(mappedPhoneItem);
+               //                 item.PhoneItems.Add(mappedPhoneItem);
                             }
                         }
 
                     }
                     phone.StockQuantity -= item.Quantity;
-              
+
+                    var mapplePhone = _mapper.Map<Phone>(phone);
+                    await _phoneRepository.UpdatePhoneAsync(mapplePhone);
                     userOrders.Status = "Completed";
                     
                 }
@@ -314,6 +273,44 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             }
 
         }
+
+        public async Task DeleteOrderDetailsOneByOne(int orderId,int orderdetailid)
+        {
+
+            var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
+
+            if (userOrders == null)
+                throw new Exception($"Order with ID {orderId} not found.");
+
+
+            foreach (var item in userOrders.OrderDetails.ToList())
+            {
+                if (item.OrderDetailId == orderdetailid)
+                {
+                    //foreach (var itemphone in item.PhoneItems)
+                    //{
+                    //    if (itemphone.OrderDetailId == item.OrderDetailId)
+                    //    {
+                    //        itemphone.OrderDetailId = null;
+                    //        itemphone.Status = "Pending";
+                    //    }
+                    //}
+                    var mappedOrderDetails = _mapper.Map<OrderDetail>(item);
+                    await _orderDetailsRepository.DeleteOrderDetails(mappedOrderDetails);
+                }
+
+
+
+            }
+            if (userOrders.OrderDetails.Count == 0)
+            {
+                var mappedOrder = _mapper.Map<Order>(userOrders);
+                await _orderRepository.DeleteOrder(mappedOrder);
+            }
+
+        }
+
+
 
         public async Task warrantyOrderByCustomer(int orderId, string code)
         {

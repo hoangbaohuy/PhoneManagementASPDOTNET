@@ -10,6 +10,7 @@ namespace SWD.PhoneStoreManagement.Repository.Response.PhoneItem
     {
         public int PhoneItemId { get; set; }
         public int PhoneId { get; set; }
+        public int? OrderDetailId { get; set; }
         public string SerialNumber { get; set; } = null!;
         public string Status { get; set; } = null!;
         public DateTime DateImported { get; set; }

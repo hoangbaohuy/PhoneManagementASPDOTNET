@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using SWD.PhoneStoreManagement.Repository.Entity;
 using SWD.PhoneStoreManagement.Repository.Interface;
 using SWD.PhoneStoreManagement.Repository.Response.Order;
-using SWD.PhoneStoreManagement.Repository.Response.OrderDetail;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,24 +11,28 @@ using System.Threading.Tasks;
 
 namespace SWD.PhoneStoreManagement.Repository.Implement
 {
-    public class OrderDetailsRepository : IOrderDetailsRepository
+    public class BrandRepository : IBrandRepository
     {
         private readonly PhoneStoreDbContext _context;
         private readonly IMapper _mapper;
-
-        public OrderDetailsRepository(PhoneStoreDbContext context, IMapper mapper)
+        public BrandRepository(PhoneStoreDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
-
-        public async Task<GetOrderDetails> GetOrderByIdAsync(int orderdetailId)
+        public async Task<IEnumerable<Brand>> GetAllBrandsAsync()
         {
-            return _mapper.Map<GetOrderDetails>(await _context.Orders.AsNoTracking().Include(o => o.OrderDetails).ThenInclude(od => od.PhoneItems).FirstOrDefaultAsync(o => o.OrderId == orderdetailId));
+            return await _context.Set<Brand>().ToListAsync();
         }
-        public async Task DeleteOrderDetails(OrderDetail order)
+        public async Task CreateBrandssAsync(Brand brand)
         {
-            _context.OrderDetails.Remove(order);
+            await _context.Brands.AddAsync(brand);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateBrandssAsync(Brand brand)
+        {
+             _context.Brands.Update(brand);
             await _context.SaveChangesAsync();
         }
     }

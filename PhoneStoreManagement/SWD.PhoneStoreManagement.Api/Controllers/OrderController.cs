@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SWD.PhoneStoreManagement.Repository.Entity;
 using SWD.PhoneStoreManagement.Repository.Request.Order;
 using SWD.PhoneStoreManagement.Service.Interface;
@@ -66,7 +69,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         {
             await _orderService.CreateOrderAsync(order);
 
-            return Ok();
+            return Ok("Create success");
         }
 
         [HttpPut("done/{orderId}")]
@@ -74,7 +77,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         {
             await _orderService.DoneOrderAsync(orderId);
 
-            return Ok();
+            return Ok("Update success");
         }
 
         [HttpPut("warranty_cus/{orderId}")]
@@ -82,15 +85,15 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         {
             await _orderService.warrantyOrderByCustomer(orderId,code);
 
-            return Ok();
+            return Ok("warranty send success");
         }
 
         [HttpPut("warranty_ad/{orderId}")]
-        public async Task<ActionResult<Order>> warrantyShopOrder(int orderId, string code,string status)
+        public async Task<ActionResult<Order>> warrantyShopOrder(int orderId,string code,string status)
         {
             await _orderService.warrantyOrderByShopOwner(orderId,code,status);
 
-            return Ok();
+            return Ok("warranty chance success");
         }
 
         [HttpDelete("{orderId}")]
@@ -98,7 +101,18 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         {
             await _orderService.DeleteOrder(orderId);
 
-            return Ok();
+            return Ok("Delete success");
         }
+
+        [HttpDelete("orders/{orderId}/orderdetails/{orderdetailId}")]
+        public async Task<ActionResult<Order>> DeleteOrderDetails(int orderId, int orderdetailId)
+        {
+            await _orderService.DeleteOrderDetailsOneByOne(orderId, orderdetailId);
+
+            return Ok("Delete success");
+        }
+
+
+
     }
 }
