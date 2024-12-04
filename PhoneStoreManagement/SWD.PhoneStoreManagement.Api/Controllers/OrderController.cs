@@ -43,7 +43,8 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         }
 
         [HttpGet("get-order-by-id-user/{id}")]
-        public async Task<ActionResult<IEnumerable<Order>>> GetOrderByUser(int id)
+        [EnableQuery]
+        public async Task<ActionResult> GetOrderByUser(int id)
         {
             var phone = await _orderService.GetOrderByUserIdAsync(id);
             if (phone == null)
@@ -54,7 +55,8 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         }
 
         [HttpGet("get-order-by-id-user-cf/{id}")]
-        public async Task<ActionResult<IEnumerable<Order>>> GetOrderByUserCf(int id)
+        [EnableQuery]
+        public async Task<ActionResult> GetOrderByUserCf(int id)
         {
             var phone = await _orderService.GetOrderByUserIdCfAsync(id);
             if (phone == null)

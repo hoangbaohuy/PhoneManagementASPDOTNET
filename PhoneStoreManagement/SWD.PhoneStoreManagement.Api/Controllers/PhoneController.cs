@@ -52,6 +52,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
         }
 
         [HttpGet("details")]
+        [EnableQuery]
         public async Task<IActionResult> GetAllPhones()
         {
             var phones = await _phoneService.GetAllPhoneDetailsAsync();
