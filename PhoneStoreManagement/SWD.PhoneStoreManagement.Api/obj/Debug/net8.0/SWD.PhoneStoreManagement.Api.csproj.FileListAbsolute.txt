@@ -1272,3 +1272,4 @@ C:\Users\huy\Downloads\swd\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.Pho
 C:\Users\huy\Downloads\swd\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.pdb
 C:\Users\huy\Downloads\swd\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.genruntimeconfig.cache
 C:\Users\huy\Downloads\swd\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\ref\SWD.PhoneStoreManagement.Api.dll
+D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\bin\Debug\net8.0\Firebase.Storage.dll
