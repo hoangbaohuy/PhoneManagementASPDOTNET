@@ -105,6 +105,7 @@ builder.Services.AddScoped<IPhoneService, PhoneService>();
 builder.Services.AddScoped<IAuthenService, AuthenService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPhoneItemService, PhoneItemService>();
+builder.Services.AddScoped<IUploadFileService, UploadFileService>();
 ///
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
