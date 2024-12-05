@@ -162,6 +162,164 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.BrandController",
+    "Method": "GetAllBrands",
+    "RelativePath": "odata/Brand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.BrandController",
+    "Method": "AddBrand",
+    "RelativePath": "odata/Brand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brandDto",
+        "Type": "SWD.PhoneStoreManagement.Repository.Request.Brand.BrandDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.BrandController",
+    "Method": "GetBrandById",
+    "RelativePath": "odata/Brand/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.BrandController",
+    "Method": "UpdateBrand",
+    "RelativePath": "odata/Brand/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "brandDto",
+        "Type": "SWD.PhoneStoreManagement.Repository.Request.Brand.BrandDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.BrandController",
+    "Method": "DeleteBrand",
+    "RelativePath": "odata/Brand/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.ModelController",
+    "Method": "GetAllModels",
+    "RelativePath": "odata/Model",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.ModelController",
+    "Method": "AddModel",
+    "RelativePath": "odata/Model",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelDto",
+        "Type": "SWD.PhoneStoreManagement.Repository.Request.Model.ModelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.ModelController",
+    "Method": "GetModelById",
+    "RelativePath": "odata/Model/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.ModelController",
+    "Method": "UpdateModel",
+    "RelativePath": "odata/Model/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "modelDto",
+        "Type": "SWD.PhoneStoreManagement.Repository.Request.Model.ModelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.ModelController",
+    "Method": "DeleteModel",
+    "RelativePath": "odata/Model/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.OrderController",
     "Method": "GetOrders",
     "RelativePath": "odata/Order",
