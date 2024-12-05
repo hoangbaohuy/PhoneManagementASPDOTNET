@@ -33,7 +33,7 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
 
         public async Task<IEnumerable<Phone>> GetAllPhonesAsync()
         {
-            return await _context.Set<Phone>().ToListAsync();
+            return await _context.Set<Phone>().Include(b => b.PhoneItems).ToListAsync();
         }
 
 
