@@ -13,6 +13,10 @@ namespace SWD.PhoneStoreManagement.Repository.Interface
         Task<IEnumerable<Brand>> GetAllBrandsAsync();
         Task CreateBrandssAsync(Brand brand);
         Task UpdateBrandssAsync(Brand brand);
-
+        Task<List<Brand>> GetAllAsync();
+        Task<Brand?> GetByIdAsync(int id);
+        Task AddAsync(Brand brand);
+        Task UpdateAsync(Brand brand);
+        Task DeleteAsync(int id);
     }
 }

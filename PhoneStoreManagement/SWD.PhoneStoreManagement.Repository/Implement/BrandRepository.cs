@@ -35,5 +35,37 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
              _context.Brands.Update(brand);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<Brand>> GetAllAsync()
+        {
+            return await _context.Brands.Include(b => b.Models).ToListAsync();
+        }
+
+        public async Task<Brand?> GetByIdAsync(int id)
+        {
+            return await _context.Brands.Include(b => b.Models).FirstOrDefaultAsync(b => b.BrandId == id);
+        }
+
+        public async Task AddAsync(Brand brand)
+        {
+            await _context.Brands.AddAsync(brand);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdateAsync(Brand brand)
+        {
+            _context.Brands.Update(brand);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var brand = await _context.Brands.FindAsync(id);
+            if (brand != null)
+            {
+                _context.Brands.Remove(brand);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }

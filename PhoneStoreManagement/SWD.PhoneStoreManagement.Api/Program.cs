@@ -100,11 +100,15 @@ builder.Services.AddScoped<IPhoneRepository, PhoneRepository>();
 builder.Services.AddScoped<IAuthenRepository, AuthenRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IPhoneItemRepository, PhoneItemRepository>();
+builder.Services.AddScoped<IModelRepository, ModelRepository>();
+builder.Services.AddScoped<IBrandRepository, BrandRepository>();
 
 builder.Services.AddScoped<IPhoneService, PhoneService>();
 builder.Services.AddScoped<IAuthenService, AuthenService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPhoneItemService, PhoneItemService>();
+builder.Services.AddScoped<IModelService, ModelService>();
+builder.Services.AddScoped<IBrandService, BrandService>();
 ///
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
