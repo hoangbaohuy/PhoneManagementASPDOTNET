@@ -194,61 +194,69 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
         public async Task DoneOrderAsync(int orderId)
         {
-            // sau khi done order nay thi
-            // so quantity cua dienthoai giam 
-            // status cua Phoneitem = sold
             var userOrders = await _orderRepository.GetOrderByIdAsync(orderId);
 
             if (userOrders.Status == "Pending")
             {
-                if(userOrders.OrderDetails == null || userOrders.OrderDetails.Count == 0)
+                if (userOrders.OrderDetails == null || userOrders.OrderDetails.Count == 0)
                 {
-                    throw new Exception($"Your shopping cart is empty."); 
+                    throw new Exception($"Giỏ hàng của bạn trống.");
                 }
+
                 foreach (var item in userOrders.OrderDetails)
                 {
-
                     var phone = _mapper.Map<Getphone>(await _phoneRepository.GetPhoneAndItemByIdAsync(item.PhoneId));
-                 
-                    if (phone == null )
+
+                    if (phone == null)
                     {
-                        throw new Exception($"Phone with ID {item.PhoneId} not found.");
+                        throw new Exception($"Điện thoại có ID {item.PhoneId} không tìm thấy.");
                     }
 
                     if (item.Quantity > phone.StockQuantity)
                     {
-                        throw new Exception($"Phone with ID {item.PhoneId} is out of stock.");
+                        throw new Exception($"Điện thoại có ID {item.PhoneId} hết hàng.");
                     }
+
+                    // Theo dõi số lượng phoneItems đã cập nhật
+                    int updatedItemsCount = 0;
 
                     foreach (var itemphone in phone.PhoneItems)
                     {
-                        if (itemphone.Status == "Pending")
+                        // Kiểm tra nếu đã cập nhật đủ số lượng cần thiết
+                        if (updatedItemsCount >= item.Quantity)
                         {
-                            for (int i = 0; i < item.Quantity; i++)
-                            {
-                                var mappedPhoneItem = _mapper.Map<GetPhoneItem>(itemphone);
-                                mappedPhoneItem.PhoneId = phone.PhoneId;
-                                mappedPhoneItem.OrderDetailId = item.OrderDetailId;
-                                mappedPhoneItem.Status = "sold";
-                                mappedPhoneItem.DatePurchased = DateTime.Now;
-                                mappedPhoneItem.ExpiryDate = DateTime.Now.AddDays(phone.WarrantyPeriod ?? 0);
-               //                 item.PhoneItems.Add(mappedPhoneItem);
-                            }
+                            break;
                         }
 
+                        if (itemphone.Status == "Available")
+                        {
+                            var mappedPhoneItem = _mapper.Map<GetPhoneItem>(itemphone);
+                            mappedPhoneItem.PhoneId = phone.PhoneId;
+                            mappedPhoneItem.OrderDetailId = item.OrderDetailId;
+                            mappedPhoneItem.Status = "sold";
+                            mappedPhoneItem.DatePurchased = DateTime.Now;
+                            mappedPhoneItem.ExpiryDate = DateTime.Now.AddDays(phone.WarrantyPeriod ?? 0);
+
+                            // đánh dấu đến khi hết hàng
+                            updatedItemsCount++;
+
+                            
+                        }
                     }
+
+                    // Đảm bảo rằng số lượng tồn kho được cập nhật sau khi cập nhật các phoneItems
                     phone.StockQuantity -= item.Quantity;
 
                     var mapplePhone = _mapper.Map<Phone>(phone);
                     await _phoneRepository.UpdatePhoneAsync(mapplePhone);
                     userOrders.Status = "Completed";
-                    
                 }
+
                 var mappedOrder = _mapper.Map<Order>(userOrders);
                 await _orderRepository.UpdateOrdersAsync(mappedOrder);
             }
-
         }
+
 
         //clear order details : one click
         //delete order  : two click
@@ -324,9 +332,9 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                     if (phoneItem.SerialNumber == code)
                     {
            
-                        if (phoneItem.Status == "sold" && phoneItem.DatePurchased <= now && now <= phoneItem.ExpiryDate)
+                        if (phoneItem.Status == "Sold" && phoneItem.DatePurchased <= now && now <= phoneItem.ExpiryDate)
                         {
-                            phoneItem.Status = "warranty";
+                            phoneItem.Status = "Warranty";
                         } else
                         {
                             throw new Exception($"this phone was Expired Warranty ");
