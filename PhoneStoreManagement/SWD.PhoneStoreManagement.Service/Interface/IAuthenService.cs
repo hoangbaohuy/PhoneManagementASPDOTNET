@@ -16,5 +16,6 @@ namespace SWD.PhoneStoreManagement.Service.Interface
         Task ForgetPassword(string email);
         Task ResetPassword(string email, string newPassword, string confirmPassword);
         Task VerifyAccount(string email, string otp);
+        Task<User> RegisterMobile(RegisterRequest registerRequest);
     }
 }

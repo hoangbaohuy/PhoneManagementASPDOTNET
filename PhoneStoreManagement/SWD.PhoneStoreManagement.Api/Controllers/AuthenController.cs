@@ -35,6 +35,27 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             }
 
         }
+        [HttpPost("register-mobile")]
+        public async Task<ActionResult<User>> RegisterMobile([FromBody] SWD.PhoneStoreManagement.Repository.Request.RegisterRequest registerRequest)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var user = await _authenService.RegisterMobile(registerRequest);
+
+                return Ok(new { message = "Đăng ký thành công", user });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] SWD.PhoneStoreManagement.Repository.Request.LoginRequest loginRequest)
         {
@@ -107,7 +128,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             try
             {
                 await _authenService.VerifyAccount(request.Email, request.Otp);
-                return Ok(new { message = "Password has been reset successfully." });
+                return Ok(new { message = "Account has been verify successfully." });
             }
             catch (Exception ex)
             {
