@@ -37,7 +37,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                 throw new Exception("tài khoản chưa kích hoạt");
             }
             User user = await authenRepository.findAccount(existingEmail);
-            if (user.Otp != null)
+            if (!string.IsNullOrEmpty(user.Otp))
             {
                 throw new Exception("tài khoản chưa xác thực");
             }
@@ -73,6 +73,29 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             SendOtpEmail(user.Email, user.Otp);
             return addUser;
         }
+        public async Task<User> RegisterMobile(RegisterRequest registerRequest)
+        {
+
+            string email = await authenRepository.findByEmail(registerRequest.Email);
+            if (email != null)
+            {
+                throw new Exception("email đã được sử dụng");
+            }
+            User user = new User
+            {
+                Email = registerRequest.Email,
+                UserName = registerRequest.UserName,
+                FullName = registerRequest.FullName,
+                Address = registerRequest.Address,
+                PhoneNumber = registerRequest.PhoneNumber,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(registerRequest.PasswordHash),
+                Role = "Customer",
+                CreatedAt = DateTime.Now,
+            };
+            var addUser = await authenRepository.AddUser(user);
+            return addUser;
+        }
+
         public async Task<User> GetUserById(int userID)
         {
             return await userRepository.GetUserById(userID);
@@ -189,7 +212,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             {
                 throw new Exception("OTP không hợp lệ");
             }
-            user.Otp = null;
+            user.Otp = string.Empty;
             await authenRepository.UpdateUser(user);
         }
     }
