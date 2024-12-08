@@ -30,5 +30,25 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
                 return BadRequest(new { error = ex.Message });
             }
         }
+
+        [HttpGet("payment-callback")]
+        public IActionResult PaymentCallBack()
+        {
+            try
+            {
+                var response = _orderService.PaymentExecute(HttpContext.Request.Query);
+
+                if (response == null) return Redirect("https://localhost:7295/payment-failure");
+
+                if (response.VnPayResponseCode == "00") return Redirect("https://localhost:7295/payment-success");
+
+                return Redirect("https://localhost:7295/payment-failure");
+            }
+            catch (Exception)
+            {
+                return Redirect("https://localhost:7295/payment-failure");
+            }
+            // return Json(new { response });
+        }
     }
 }
