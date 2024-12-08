@@ -233,7 +233,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                             var mappedPhoneItem = _mapper.Map<GetPhoneItem>(itemphone);
                             mappedPhoneItem.PhoneId = phone.PhoneId;
                             mappedPhoneItem.OrderDetailId = item.OrderDetailId;
-                            mappedPhoneItem.Status = "sold";
+                            mappedPhoneItem.Status = "Sold";
                             mappedPhoneItem.DatePurchased = DateTime.Now;
                             mappedPhoneItem.ExpiryDate = DateTime.Now.AddDays(phone.WarrantyPeriod ?? 0);
 
@@ -332,7 +332,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                     if (phoneItem.SerialNumber == code)
                     {
            
-                        if (phoneItem.Status == "Sold" && phoneItem.DatePurchased <= now && now <= phoneItem.ExpiryDate)
+                        if (phoneItem.Status == "Sold" && now <= phoneItem.ExpiryDate)
                         {
                             phoneItem.Status = "Warranty";
                         } else
@@ -349,7 +349,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             await _orderRepository.UpdateOrdersAsync(mappedOrder);
 
         }
-        // status = Warranty, Under Warranty ,Warranty Expired,Warranty Claimed
+        // status = Warranty, Under Warranty ,Warranty Expired,Warranty Claimed,Sold
         public async Task warrantyOrderByShopOwner(int orderId, string code,string status)
         {
              

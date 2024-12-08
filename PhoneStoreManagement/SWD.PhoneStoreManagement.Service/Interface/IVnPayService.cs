@@ -12,6 +12,6 @@ namespace SWD.PhoneStoreManagement.Service.Interface
     {
         Task<String> CreatePaymentUrlAsync(int orderId);
         //string CreatePaymentUrl(int OrderId, VnPaymentRequestModel model);
-        //VnPaymentResponseModel PaymentExecute(IQueryCollection collections);
+        VnPaymentResponseModel PaymentExecute(IQueryCollection collections);
     }
 }
