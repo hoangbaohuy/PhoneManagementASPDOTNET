@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.api\\controllers\\vnpaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6EBC9D-745F-4B55-8CCA-C3A39899DB09}|SWD.PhoneStoreManagement.Api\\SWD.PhoneStoreManagement.Api.csproj|solutionrelative:swd.phonestoremanagement.api\\controllers\\vnpaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\interface\\ipaymentrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\interface\\ipaymentrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.service\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\interface\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.service\\implement\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DF63A2-1381-4DDC-BB75-E78222874672}|SWD.PhoneStoreManagement.Service\\SWD.PhoneStoreManagement.Service.csproj|solutionrelative:swd.phonestoremanagement.service\\implement\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|d:\\ki_9\\phonemanagementaspdotnet\\phonestoremanagement\\swd.phonestoremanagement.repository\\implement\\paymentrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A92FC2D-F113-4463-B083-34C20E7E40E4}|SWD.PhoneStoreManagement.Repository\\SWD.PhoneStoreManagement.Repository.csproj|solutionrelative:swd.phonestoremanagement.repository\\implement\\paymentrrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,6 +115,68 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VnPayController.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\VnPayController.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Api\\Controllers\\VnPayController.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Api\\Controllers\\VnPayController.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Api\\Controllers\\VnPayController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T06:00:56.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\PaymentService.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Implement\\PaymentService.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Implement\\PaymentService.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Implement\\PaymentService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T05:55:25.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPaymentrRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IPaymentrRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Interface\\IPaymentrRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Interface\\IPaymentrRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Interface\\IPaymentrRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T05:53:05.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Service\\Interface\\IPaymentService.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Service\\Interface\\IPaymentService.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Service\\Interface\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T05:55:54.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentrRepository.cs",
+              "DocumentMoniker": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\PaymentrRepository.cs",
+              "RelativeDocumentMoniker": "SWD.PhoneStoreManagement.Repository\\Implement\\PaymentrRepository.cs",
+              "ToolTip": "D:\\ki_9\\PhoneManagementASPDOTNET\\PhoneStoreManagement\\SWD.PhoneStoreManagement.Repository\\Implement\\PaymentrRepository.cs",
+              "RelativeToolTip": "SWD.PhoneStoreManagement.Repository\\Implement\\PaymentrRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T05:53:11.644Z"
             }
           ]
         }

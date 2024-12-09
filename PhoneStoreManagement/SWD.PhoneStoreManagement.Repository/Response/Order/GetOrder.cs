@@ -22,6 +22,6 @@ namespace SWD.PhoneStoreManagement.Repository.Response.Order
 
         public virtual ICollection<GetOrderDetails> OrderDetails { get; set; } = [];
 
-        public virtual Payment? Payment { get; set; }
+
     }
 }

@@ -832,7 +832,6 @@ D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.A
 D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.AssemblyInfoInputs.cache
 D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.AssemblyInfo.cs
 D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.csproj.CoreCompileInputs.cache
-D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\SWD.PhoneStoreManagement.Api.sourcelink.json
 D:\ki_9\PhoneManagementASPDOTNET\PhoneStoreManagement\SWD.PhoneStoreManagement.Api\obj\Debug\net8.0\staticwebassets.build.json

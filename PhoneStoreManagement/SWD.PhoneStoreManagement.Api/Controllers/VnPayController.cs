@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
+using SWD.PhoneStoreManagement.Repository.Entity;
 using SWD.PhoneStoreManagement.Service.Interface;
 
 namespace SWD.PhoneStoreManagement.Api.Controllers
@@ -10,10 +12,32 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
     {
 
         private readonly IVnPayService _orderService;
-
-        public VnPayController(IVnPayService orderService)
+        private readonly IPaymentService _paymentService;
+        
+        public VnPayController(IVnPayService orderService,IPaymentService paymentService)
         {
             _orderService = orderService;
+            _paymentService = paymentService;
+        }
+
+
+        [HttpGet]
+        [EnableQuery]
+        public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
+        {
+            var phones = await _paymentService.GetAllPayMentsAsync();
+            return Ok(phones);
+        }
+
+        [HttpGet("order-payment/{orderid}")]
+        public async Task<ActionResult<IEnumerable<Payment>>> GetPaymentByOrderId(int orderid)
+        {
+            var phone = await _paymentService.GetPayMentByOrderIdAsync(orderid);
+            if (phone == null)
+            {
+                return NotFound();
+            }
+            return Ok(phone);
         }
 
         [HttpPost("proceed-vnpay-payment")]
@@ -31,16 +55,40 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             }
         }
 
+
+        [HttpPost("{orderId}")]
+        public async Task<IActionResult> CreatePayPayment( int orderId)
+        {
+            try
+            {
+                await _paymentService.CreatePaymentAsync(orderId);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+
+
+
         [HttpGet("payment-callback")]
-        public IActionResult PaymentCallBack()
+        public async Task<IActionResult> PaymentCallBack()
         {
             try
             {
                 var response = _orderService.PaymentExecute(HttpContext.Request.Query);
 
-                if (response == null) return Redirect("https://localhost:7295/payment-failure");
+                if (response == null || !int.TryParse(response.OrderId?.ToString(), out int orderId)) 
+                    return Redirect("https://localhost:7295/payment-failure");
 
-                if (response.VnPayResponseCode == "00") return Redirect("https://localhost:7295/payment-success");
+                if (response.VnPayResponseCode == "00")
+                {
+                    await _paymentService.CreatePaymentAsync(orderId);
+                    return Redirect("https://localhost:7295/payment-success");
+                }
+              
 
                 return Redirect("https://localhost:7295/payment-failure");
             }

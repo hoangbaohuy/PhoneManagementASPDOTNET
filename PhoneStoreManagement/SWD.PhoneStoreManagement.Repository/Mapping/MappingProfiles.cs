@@ -4,6 +4,7 @@ using SWD.PhoneStoreManagement.Repository.Request.Order;
 using SWD.PhoneStoreManagement.Repository.Request.OrderDetail;
 using SWD.PhoneStoreManagement.Repository.Response.Order;
 using SWD.PhoneStoreManagement.Repository.Response.OrderDetail;
+using SWD.PhoneStoreManagement.Repository.Response.Payment;
 using SWD.PhoneStoreManagement.Repository.Response.Phone;
 using SWD.PhoneStoreManagement.Repository.Response.PhoneItem;
 using System;
@@ -37,6 +38,10 @@ namespace SWD.PhoneStoreManagement.Repository.Mapping
 
             #region phone item
             CreateMap<PhoneItem, GetPhoneItem>().ReverseMap();
+            #endregion
+
+            #region Payment
+            CreateMap<Payment, GetPayment>().ReverseMap();
             #endregion
         }
     }

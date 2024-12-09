@@ -12,6 +12,8 @@ namespace SWD.PhoneStoreManagement.Repository.Response.OrderDetail
         public int OrderDetailId { get; set; }
         public int PhoneId { get; set; }
         public string? Image { get; set; }
+
+        public int? WarrantyPeriod { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public virtual ICollection<GetPhoneItem> PhoneItems { get; set; } = [];

@@ -114,10 +114,12 @@ builder.Services.AddScoped<IUploadFileService, UploadFileService>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IOrderDetailsRepository, OrderDetailsRepository>();
+builder.Services.AddScoped<IPaymentrRepository, PaymentrRepository>();
+
 
 /// vnp
 builder.Services.AddScoped<IVnPayService, VnPayService>();
-
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
