@@ -82,21 +82,21 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             return Ok("Update success");
         }
 
-        [HttpPut("warranty_cus/{orderId}")]
-        public async Task<ActionResult<Order>> warrantyCustomerOrder(int orderId, string code)
-        {
-            await _orderService.warrantyOrderByCustomer(orderId,code);
+        //[HttpPut("warranty_cus/{orderId}")]
+        //public async Task<ActionResult<Order>> warrantyCustomerOrder(int orderId, string code)
+        //{
+        //    await _orderService.warrantyOrderByCustomer(orderId,code);
 
-            return Ok("warranty send success");
-        }
+        //    return Ok("warranty send success");
+        //}
 
-        [HttpPut("warranty_ad/{orderId}")]
-        public async Task<ActionResult<Order>> warrantyShopOrder(int orderId,string code,string status)
-        {
-            await _orderService.warrantyOrderByShopOwner(orderId,code,status);
+        //[HttpPut("warranty_ad/{orderId}")]
+        //public async Task<ActionResult<Order>> warrantyShopOrder(int orderId,string code,string status)
+        //{
+        //    await _orderService.warrantyOrderByShopOwner(orderId,code,status);
 
-            return Ok("warranty chance success");
-        }
+        //    return Ok("warranty chance success");
+        //}
 
         [HttpDelete("{orderId}")]
         public async Task<ActionResult<Order>> DeleteOrder(int orderId)

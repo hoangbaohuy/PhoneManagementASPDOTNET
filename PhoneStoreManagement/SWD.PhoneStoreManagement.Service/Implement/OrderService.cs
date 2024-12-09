@@ -49,6 +49,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                     throw new Exception($"Phone with ID {itemCf.PhoneId} don't exit.");
                 }
                 itemCf.Image = phone.Image;
+                itemCf.WarrantyPeriod = phone.WarrantyPeriod;
             }
             return Order;
         }
@@ -331,7 +332,10 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                 {
                     if (phoneItem.SerialNumber == code)
                     {
-           
+                        if (phoneItem.Status == "Warranty")
+                        {
+                            throw new Exception($"This Phone Was Warranted");
+                        }
                         if (phoneItem.Status == "Sold" && now <= phoneItem.ExpiryDate)
                         {
                             phoneItem.Status = "Warranty";
