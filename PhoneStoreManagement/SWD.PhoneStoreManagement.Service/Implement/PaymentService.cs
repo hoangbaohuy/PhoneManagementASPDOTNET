@@ -31,10 +31,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
         {
             var order = await _orderRepository.GetOrderByIdAsync(orderdId);
 
-            var exitpayment = _paymentrRepository.GetPayMentByOrderIdAsync(order.OrderId);
-            if (exitpayment != null) { 
-            
-            } 
+
             if (order == null)
             {
                 throw new Exception($"Phone with ID {order.OrderId} don't exit.");

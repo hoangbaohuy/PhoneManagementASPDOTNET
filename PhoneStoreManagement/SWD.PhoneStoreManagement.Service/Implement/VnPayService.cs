@@ -38,7 +38,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
         public string CreatePaymentUrl(int OrderId, decimal amount)
         {
-            var tick = DateTime.Now.Ticks.ToString();
+            var tick = DateTime.Now.Ticks.ToString().Substring(10);
             var vnpay = new VnPayLibrary();
 
             var ipAddr = "127.0.0.1"; //Config dai
@@ -66,10 +66,10 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             vnpay.AddRequestData("vnp_IpAddr", ipAddr);
             vnpay.AddRequestData("vnp_Locale", _config["VnPay:Locale"]);
 
-            vnpay.AddRequestData("vnp_OrderInfo", "Thanh toan don hang:" + orderIdStr);
+            vnpay.AddRequestData("vnp_OrderInfo", orderIdStr);
             vnpay.AddRequestData("vnp_OrderType", "orther"); //default value: other
             vnpay.AddRequestData("vnp_ReturnUrl", returnUrl);
-            vnpay.AddRequestData("vnp_TxnRef", orderIdStr); // Mã tham chiếu của giao dịch tại hệ 
+            vnpay.AddRequestData("vnp_TxnRef",orderIdStr + tick); // Mã tham chiếu của giao dịch tại hệ 
            
             var paymentUrl = vnpay.CreateRequestUrl(vnp_Url, vnp_HashSecret);
             return paymentUrl;
