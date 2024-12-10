@@ -80,21 +80,21 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             {
                 var response = _orderService.PaymentExecute(HttpContext.Request.Query);
 
-                if (response == null || !int.TryParse(response.OrderId?.ToString(), out int orderId)) 
-                    return Redirect("https://localhost:7295/payment-failure");
+                if (response == null || !int.TryParse(response.OrderDescription?.ToString(), out int orderId)) 
+                    return Redirect("http://localhost:3000/payment-failure");
 
                 if (response.VnPayResponseCode == "00")
                 {
                     await _paymentService.CreatePaymentAsync(orderId);
-                    return Redirect("https://localhost:7295/payment-success");
+                    return Redirect("http://localhost:3000/payment-success");
                 }
               
 
-                return Redirect("https://localhost:7295/payment-failure");
+                return Redirect("http://localhost:3000/payment-failure");
             }
             catch (Exception)
             {
-                return Redirect("https://localhost:7295/payment-failure");
+                return Redirect("http://localhost:3000/payment-failure");
             }
             // return Json(new { response });
         }
