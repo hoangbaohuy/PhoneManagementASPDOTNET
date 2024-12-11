@@ -289,6 +289,22 @@
   },
   {
     "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.VnPayController",
+    "Method": "GetOrderAndPaymentByUserCf",
+    "RelativePath": "api/VnPay/get-order-payment-by-id-user-/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SWD.PhoneStoreManagement.Api.Controllers.VnPayController",
     "Method": "GetPaymentByOrderId",
     "RelativePath": "api/VnPay/order-payment/{orderid}",
     "HttpMethod": "GET",

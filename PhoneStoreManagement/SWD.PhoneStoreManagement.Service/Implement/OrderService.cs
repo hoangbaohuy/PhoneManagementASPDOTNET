@@ -374,7 +374,11 @@ namespace SWD.PhoneStoreManagement.Service.Implement
 
         }
 
+        //public async Task<IEnumerable<GetOrderPayment>> GetOrdersWithByUserPayment(int userId)
+        //{
+        //    var ListOrder = await _orderRepository.GetOrdersWithByUserPayment(userId);
 
-
+        //    return ListOrder;
+        //}
     }
 }

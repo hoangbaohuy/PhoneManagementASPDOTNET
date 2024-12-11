@@ -14,6 +14,7 @@ namespace SWD.PhoneStoreManagement.Service.Interface
     public interface IPaymentService
     {
         Task<IEnumerable<GetPayment>> GetPayMentByOrderIdAsync(int orderId);
+        Task<IEnumerable<GetOrderPayment>> GetOrdersWithByUserPayment(int userId);
         Task<IEnumerable<GetPayment>> GetAllPayMentsAsync();
         Task CreatePaymentAsync(int orderId);
     }

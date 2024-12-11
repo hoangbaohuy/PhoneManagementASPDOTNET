@@ -1,5 +1,6 @@
 ﻿using SWD.PhoneStoreManagement.Repository.Entity;
 using SWD.PhoneStoreManagement.Repository.Response.OrderDetail;
+using SWD.PhoneStoreManagement.Repository.Response.Payment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace SWD.PhoneStoreManagement.Repository.Response.Order
 
         public virtual ICollection<GetOrderDetails> OrderDetails { get; set; } = [];
 
+        public virtual GetPayment? Payment { get; set; }
 
     }
 }

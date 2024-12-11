@@ -40,6 +40,19 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
             return Ok(phone);
         }
 
+
+        [HttpGet("get-order-payment-by-id-user-/{id}")]
+        [EnableQuery]
+        public async Task<ActionResult> GetOrderAndPaymentByUserCf(int id)
+        {
+            var phone = await _paymentService.GetOrdersWithByUserPayment(id);
+            if (phone == null)
+            {
+                return NotFound();
+            }
+            return Ok(phone);
+        }
+
         [HttpPost("proceed-vnpay-payment")]
         public async Task<IActionResult> ProceedVnPayPayment([FromBody] string orderId)
         {
