@@ -14,6 +14,7 @@ namespace SWD.PhoneStoreManagement.Repository.Interface
         Task<GetOrder> GetOrderByIdAsync(int phoneId);
         Task<IEnumerable<GetOrder>> GetOrderByUserIdAsync(int userId);
         Task<IEnumerable<GetOrderCf>> GetOrderByUserIdCfAsync(int userId);
+        Task<List<GetOrderPayment>> GetOrdersWithByUserPayment(int userId);
         Task<IEnumerable<GetOrder>> GetAllOrdersAsync();
         Task CreateOrdersAsync(Order corder);
         Task UpdateOrdersAsync(Order corder);

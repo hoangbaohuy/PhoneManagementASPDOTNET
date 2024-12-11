@@ -24,6 +24,7 @@ namespace SWD.PhoneStoreManagement.Repository.Mapping
             CreateMap<CreateOrder, Order>().ReverseMap();
             CreateMap<Order, GetOrder>().ReverseMap();
             CreateMap<Order, GetOrderCf>().ReverseMap();
+            CreateMap<Order, GetOrderPayment>().ReverseMap();
             #endregion
 
             #region Order detail
