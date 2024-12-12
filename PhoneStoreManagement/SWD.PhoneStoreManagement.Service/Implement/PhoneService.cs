@@ -84,5 +84,50 @@ namespace SWD.PhoneStoreManagement.Service.Implement
             // Save updated phone
             await _phoneRepository.UpdatePhoneAsync(existingPhone);
         }
+
+        public async Task AddPhoneAsync(Phone phone)
+        {
+            // Validation: Price must be greater than 0
+            if (phone.Price <= 0)
+            {
+                throw new ArgumentException("Price must be greater than zero.");
+            }
+
+            // Validation: Stock quantity cannot be negative
+            if (phone.StockQuantity < 0)
+            {
+                throw new ArgumentException("Stock quantity cannot be negative.");
+            }
+
+            // Validation: Color cannot be empty
+            if (string.IsNullOrWhiteSpace(phone.Color))
+            {
+                throw new ArgumentException("Color is required and cannot be empty.");
+            }
+
+            // Validation: Warranty period must be within a reasonable range
+            if (phone.WarrantyPeriod.HasValue && (phone.WarrantyPeriod < 0 || phone.WarrantyPeriod > 60))
+            {
+                throw new ArgumentException("Warranty period must be between 0 and 60 months.");
+            }
+
+            // Validation: Check if ModelId exists in the database
+            var existingModel = await _phoneRepository.GetModelByIdAsync(phone.ModelId);
+            if (existingModel == null)
+            {
+                throw new ArgumentException($"Model with ID {phone.ModelId} does not exist.");
+            }
+
+            // Business Rule: Ensure the phone description does not exceed a certain length
+            if (!string.IsNullOrEmpty(phone.Description) && phone.Description.Length > 500)
+            {
+                throw new ArgumentException("Description cannot exceed 500 characters.");
+            }
+
+
+            // Proceed with saving the phone
+            await _phoneRepository.AddPhoneAsync(phone);
+        }
+
     }
 }

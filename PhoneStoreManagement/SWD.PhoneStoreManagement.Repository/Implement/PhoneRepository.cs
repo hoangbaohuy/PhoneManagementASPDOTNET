@@ -77,5 +77,14 @@ namespace SWD.PhoneStoreManagement.Repository.Implement
             _context.Phones.Update(phone);
             await _context.SaveChangesAsync();
         }
+        public async Task AddPhoneAsync(Phone phone)
+        {
+            await _context.Phones.AddAsync(phone);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<Model?> GetModelByIdAsync(int modelId)
+        {
+            return await _context.Models.FindAsync(modelId);
+        }
     }
 }
