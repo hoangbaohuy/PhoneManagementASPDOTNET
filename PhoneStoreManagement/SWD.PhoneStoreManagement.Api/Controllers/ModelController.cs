@@ -47,7 +47,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
 
             var model = new Model
             {
-                ModelName = modelDto.ModelName + " OperatingSystem: " + modelDto.OperatingSystem + " Ram: " +modelDto.Ram.ToString + " Storage: " +modelDto.Storage.ToString,
+                ModelName = modelDto.ModelName + " OperatingSystem: " + modelDto.OperatingSystem + " Ram: " +modelDto.Ram.ToString() + " Storage: " +modelDto.Storage.ToString(),
                 BrandId = modelDto.BrandId,
                 ReleaseDate = DateOnly.FromDateTime(DateTime.Now),
                 OperatingSystem = modelDto.OperatingSystem,
