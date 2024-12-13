@@ -76,5 +76,38 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
                 return StatusCode(500, new { Message = "An error occurred.", Details = ex.Message });
             }
         }
+        [HttpPost]
+        public async Task<IActionResult> AddPhone([FromBody] AddPhone addPhoneRequest)
+        {
+            try
+            {
+                // Map the AddPhone request to the Phone entity
+                var phone = new Phone
+                {
+                    ModelId = addPhoneRequest.ModelId,
+                    Description = addPhoneRequest.Description,
+                    Price = addPhoneRequest.Price,
+                    StockQuantity = addPhoneRequest.StockQuantity,
+                    Image = addPhoneRequest.Image,
+                    Chipset = addPhoneRequest.Chipset,
+                    Gpu = addPhoneRequest.Gpu,
+                    Color = addPhoneRequest.Color,
+                    WarrantyPeriod = addPhoneRequest.WarrantyPeriod
+                };
+
+                // Pass the mapped entity to the service
+                await _phoneService.AddPhoneAsync(phone);
+                return Ok(new { Message = "Phone added successfully." });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { Error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Error = "An error occurred.", Details = ex.Message });
+            }
+        }
+
     }
 }
