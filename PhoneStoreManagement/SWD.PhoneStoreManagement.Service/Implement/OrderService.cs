@@ -67,6 +67,7 @@ namespace SWD.PhoneStoreManagement.Service.Implement
                         throw new Exception($"Phone with ID {itemCf.PhoneId} don't exit.");
                     }
                     itemCf.Image = phone.Image;
+                    itemCf.WarrantyPeriod = phone.WarrantyPeriod;
                 }
             }
             return ListOrder;
