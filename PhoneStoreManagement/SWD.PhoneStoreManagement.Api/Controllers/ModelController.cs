@@ -47,7 +47,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
 
             var model = new Model
             {
-                ModelName = modelDto.ModelName + " OperatingSystem: " + modelDto.OperatingSystem + " Ram: " +modelDto.Ram.ToString() + " Storage: " +modelDto.Storage.ToString(),
+                ModelName = modelDto.ModelName + " OperatingSystem: " + modelDto.OperatingSystem + " Ram: " + modelDto.Ram + " Storage: " + modelDto.Storage,
                 BrandId = modelDto.BrandId,
                 ReleaseDate = DateOnly.FromDateTime(DateTime.Now),
                 OperatingSystem = modelDto.OperatingSystem,
@@ -75,7 +75,7 @@ namespace SWD.PhoneStoreManagement.Api.Controllers
 
             // Map DTO fields to the existing entity
             existingModel.BrandId = modelDto.BrandId;
-            existingModel.ModelName = modelDto.ModelName + " OperatingSystem: " + modelDto.OperatingSystem + " Ram: " + modelDto.Ram.ToString + " Storage: " + modelDto.Storage.ToString;
+            existingModel.ModelName = modelDto.ModelName;
             existingModel.OperatingSystem = modelDto.OperatingSystem;
             existingModel.Ram = modelDto.Ram;
             existingModel.Storage = modelDto.Storage;
